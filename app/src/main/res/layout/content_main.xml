@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <ImageButton
+        android:id="@+id/look"
+        android:layout_width="220dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="45dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:contentDescription="cha"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button2"
+        android:text="查看手帐"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text"></ImageButton>
+
+    <ImageButton
+        android:id="@+id/create"
+        android:layout_width="221dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="65dp"
+        android:adjustViewBounds="true"
+        android:background="#00000000"
+        android:contentDescription="cha"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/button"
+        android:text="新建手帐"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/look"></ImageButton>
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="62dp"
+        android:layout_marginBottom="98dp"
+        android:layout_marginTop="95dp"
+        android:text="               记录生活!\n记录美,记下你的美好瞬间！"
+        android:textSize="60px"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="178dp"
+        android:text="查看手账"
+        android:textColor="#bdbcbc"
+        android:textSize="50px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="173dp"
+        android:text="新建手账"
+        android:textColor="#bdbcbc"
+        android:textSize="50px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/text" />
+
+</android.support.constraint.ConstraintLayout>
